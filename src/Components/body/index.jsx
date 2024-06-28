@@ -4,13 +4,13 @@ const projects = [
     {
         title: 'E-commerce fake API Platzi',
         description: 'Tienda en línea con React, Vite.js y Tailwind CSS. Con esta aplicación, aprendí a manipular una API, utilizar sus datos y redirigir al usuario según donde hagan clic',
-        image: '/public/image/E-commerce.png',
+        image: '/image/E-commerce.png',
         link: 'https://adorable-vacherin-8c1dae.netlify.app/',
     },
     {
         title: 'To do list',
         description: 'Una aplicación para anotar las tareas del día usando React.js. Con el desarrollo de esta página, aprendí a implementar persistencia de datos usando el local storage',
-        image: '/public/image/To-do-list.png',
+        image: '/image/To-do-list.png',
         link: 'https://chatojared06.github.io/TodoMachine/',
     },
 ]
@@ -19,13 +19,13 @@ const projects2 = [
     {
         title: 'Concepto básico de un E-commerce sin lógica',
         description: 'En este proyecto aprendí conceptos básicos de HTML y CSS',
-        image: '/public/image/ecommerce-boseto.png',
+        image: '/image/ecommerce-boseto.png',
         link: 'https://chatojared06.github.io/curso-frontend-developer-JavaScript-practico/',
     },
     {
         title: 'Boseto de un Portafolio profesional y página de contacto',
         description: 'En este proyecto básico aprendí a llamar los últimos videos de un canal de YouTube y presentarlos en la aplicación',
-        image: '/public/image/jedi.png',
+        image: '/image/jedi.png',
         link: 'https://chatojared06.github.io/async-landing/',
     },
 ]
