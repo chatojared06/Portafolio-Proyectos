@@ -6,7 +6,7 @@ const SobreMi = () => {
       <div className='w-full max-w-screen-lg'>
         <h2 className="text-gray font-poppins text-3xl mt-4 mx-6 sm:mx-40 ">Sobre Mí:</h2>
         <p className='mt-6 mx-6 sm:mx-40 text-lg '>
-          Soy Jared Ozono, un desarrollador Frontend con una sólida experiencia en la creación de interfaces de usuario dinámicas y responsivas. Mi objetivo es transformar ideas complejas en aplicaciones web intuitivas y funcionales. Me especializo en tecnologías modernas como React, Vite.js y Tailwind CSS, y estoy comprometido con el aprendizaje continuo y la mejora de mis habilidades.
+          Soy Jared Ozono, un desarrollador Frontend con un profundo interes aprender mas sobre la creación de interfaces de usuario dinámicas y responsivas. Mi objetivo es transformar ideas complejas en aplicaciones web intuitivas y funcionales. Me especializo en tecnologías modernas como React, Vite.js y Tailwind CSS, y estoy comprometido con el aprendizaje continuo y la mejora de mis habilidades.
         </p>
       </div>
       <div className='w-full max-w-screen-lg'>
