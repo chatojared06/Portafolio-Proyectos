@@ -1,91 +1,152 @@
-import React from "react"
+import React from "react";
 
-const projects = [ 
-    {
-        title: 'E-commerce fake API Platzi',
-        description: 'Tienda en línea con React, Vite.js y Tailwind CSS. Con esta aplicación, aprendí a manipular una API, utilizar sus datos y redirigir al usuario según donde hagan clic',
-        image: '/image/E-commerce.png',
-        link: 'https://adorable-vacherin-8c1dae.netlify.app/',
-    },
-    {
-        title: 'To do list',
-        description: 'Una aplicación para anotar las tareas del día usando React.js. Con el desarrollo de esta página, aprendí a implementar persistencia de datos usando el local storage',
-        image: '/image/To-do-list.png',
-        link: 'https://chatojared06.github.io/TodoMachine/',
-    },
-]
+const projects = [
+  {
+    title: 'E-commerce con API Fake Platzi',
+    description: 'Desarrollé una tienda en línea utilizando React, Vite.js y Tailwind CSS. Este proyecto me permitió aprender a manipular una API, gestionar datos de manera eficiente y redirigir a los usuarios según sus interacciones. La tienda simula un entorno de comercio electrónico con funcionalidades completas, proporcionando una experiencia de usuario fluida y responsiva.',
+    tecnologiasUtilizadas: [
+      'React: Utilizado para construir una interfaz de usuario dinámica y reactiva.',
+      'Vite.js: Implementado como el bundler para mejorar la velocidad de desarrollo y la eficiencia.',
+      'Tailwind CSS: Usado para diseñar una interfaz moderna y estilizada de manera rápida y eficiente.',
+      'API Fake de Platzi: Implementada para simular datos reales de productos y usuarios, permitiendo pruebas y desarrollos más realistas.',
+    ],
+    habilidadesDesarrolladas: [
+      'Manipulación de API: Aprendí a interactuar con una API, gestionar solicitudes y respuestas, y utilizar los datos obtenidos en la aplicación.',
+      'Gestión de Datos: Implementé técnicas para manejar y presentar datos de manera eficiente en la interfaz de usuario.',
+      'Redirección de Usuarios: Desarrollé funcionalidades para redirigir a los usuarios según sus acciones dentro de la aplicación, mejorando la navegación y experiencia del usuario.',
+    ],
+    image: '/image/E-commerce.png',
+    link: 'https://adorable-vacherin-8c1dae.netlify.app/',
+  },
+  {
+    title: 'To do list',
+    description: 'Desarrollé una aplicación de lista de tareas utilizando React.js. Este proyecto me permitió aprender a implementar la persistencia de datos usando el almacenamiento local (local storage), asegurando que las tareas del usuario se mantengan guardadas incluso después de cerrar la aplicación. La interfaz es intuitiva y fácil de usar, permitiendo a los usuarios agregar, editar y eliminar tareas de manera eficiente.',
+    tecnologiasUtilizadas: [
+      'React: Utilizado para crear una interfaz de usuario dinámica y reactiva.',
+      'CSS: Usado para diseñar una interfaz limpia y moderna, asegurando una buena experiencia de usuario.',
+      'Local Storage: Implementado para mantener la persistencia de datos, guardando las tareas del usuario en el navegador.',
+    ],
+    habilidadesDesarrolladas: [
+      'Gestión de Estados en React: Aprendí a manejar estados en React para actualizar y renderizar la lista de tareas en tiempo real.',
+      'Persistencia de Datos: Implementé técnicas para almacenar y recuperar datos del local storage, asegurando que las tareas del usuario se guarden y se recuperen correctamente.',
+      'Optimización de Rendimiento: Mejoré la eficiencia de la aplicación, asegurando una carga rápida y una experiencia de usuario fluida.',
+    ],
+    image: '/image/To-do-list.png',
+    link: 'https://chatojared06.github.io/TodoMachine/',
+  },
+];
 
-const projects2 = [ 
-    {
-        title: 'Concepto básico de un E-commerce sin lógica',
-        description: 'En este proyecto aprendí conceptos básicos de HTML y CSS',
-        image: '/image/ecommerce-boseto.png',
-        link: 'https://chatojared06.github.io/curso-frontend-developer-JavaScript-practico/',
-    },
-    {
-        title: 'Boseto de un Portafolio profesional y página de contacto',
-        description: 'En este proyecto básico aprendí a llamar los últimos videos de un canal de YouTube y presentarlos en la aplicación',
-        image: '/image/jedi.png',
-        link: 'https://chatojared06.github.io/async-landing/',
-    },
-]
+const projects2 = [
+  {
+    title: 'Concepto básico de un E-commerce sin lógica',
+    description: 'Desarrollé un sitio web de comercio electrónico básico para aprender y practicar los conceptos fundamentales de HTML y CSS. Este proyecto me permitió comprender la estructura básica de un sitio web y cómo estilizarlo utilizando CSS. Aunque no incluye lógica de backend ni interacciones avanzadas, el diseño es responsivo y ofrece una buena base para proyectos más complejos en el futuro.',
+    tecnologiasUtilizadas: [
+      'HTML: Utilizado para crear la estructura del sitio web.',
+      'CSS: Usado para diseñar y estilizar la interfaz, asegurando un diseño atractivo y responsivo.',
+    ],
+    habilidadesDesarrolladas: [
+      'Maquetación con HTML: Aprendí a estructurar correctamente un sitio web utilizando etiquetas semánticas de HTML.',
+      'Estilización con CSS: Implementé estilos para mejorar la apariencia del sitio, incluyendo el uso de flexbox y grid para crear un diseño responsivo.',
+      'Diseño Responsivo: Aseguré que el sitio web se vea bien en diferentes dispositivos y tamaños de pantalla.',
+    ],
+    image: '/image/ecommerce-boseto.png',
+    link: 'https://chatojared06.github.io/curso-frontend-developer-JavaScript-practico/',
+  },
+  {
+    title: 'Boseto de un Portafolio profesional y página de contacto',
+    description: 'En este proyecto básico aprendí a llamar los últimos videos de un canal de YouTube y presentarlos en la aplicación',
+    tecnologiasUtilizadas: [
+      'HTML: Utilizado para estructurar las páginas del portafolio.',
+      'CSS: Usado para estilizar y diseñar la interfaz, asegurando una apariencia profesional.',
+      'JavaScript: Implementado para integrar la API de YouTube y manejar la presentación dinámica de los videos.',
+      'API de YouTube: Usada para obtener y mostrar los últimos videos de un canal específico.',
+    ],
+    habilidadesDesarrolladas: [
+      'Integración de API: Aprendí a interactuar con la API de YouTube, gestionar solicitudes y respuestas, y mostrar los datos obtenidos en la página web.',
+      'Diseño de Interfaz: Mejoré mis habilidades en el diseño de interfaces, creando una presentación atractiva y funcional para el portafolio y la página de contacto.',
+      'JavaScript Básico: Utilicé JavaScript para manejar la lógica necesaria para obtener y presentar los videos de YouTube dinámicamente.',
+    ],
+    image: '/image/jedi.png',
+    link: 'https://chatojared06.github.io/async-landing/',
+  },
+];
 
 const Body = () => {
-return(
-    <div className="flex flex-col">
-        <div className="justify-center mt-6"> 
+  return (
+    <div className="flex flex-col items-center">
+      <div className="justify-center mt-6">
         <p className="text-white text-center text-2xl font-poppins"> Proyectos con lógica </p>
-        </div>
-        
-            <div className="flex flex-wrap justify-center sm:grid-cols-2 md:grid-cols-3 gap-24 px-4 py-10">
-            {projects.map((project, index) => (
-                <div key={index} className="max-w-sm rounded-2xl overflow-hidden shadow-2xl bg-gray-100" >
-                <img className="w-full" src={project.image} alt={project.title} />
-                <div className="px-6 py-4">
+      </div>
+
+      <div className="flex flex-col items-center gap-12 px-4 py-10">
+        {projects.map((project, index) => (
+          <div key={index} className="w-full sm:max-w-2xl lg:max-w-3xl mx-10">
+            <div className="h-full rounded-2xl overflow-hidden shadow-2xl bg-gray-100">
+              <img className="w-full object-cover h-auto" src={project.image} alt={project.title} />
+              <div className="px-6 py-4">
                 <div className="font-bold text-xl mb-2 font-poppins">{project.title}</div>
                 <p className="text-gray-700 text-base"> {project.description} </p>
-            </div>
-            <div className="px-6 pt-4 pb-2">
-            <a
-                href={project.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block bg-cyan-800 text-white w-full px-3 py-2 rounded-lg text-lg font-semibold text-center font-poppins"
+                <div className="font-bold text-xl mt-3 mb-2 font-poppins">Tecnologías utilizadas</div>
+                <ul className='text-lg mt-4 mx-6 list-disc '>
+                  {project.tecnologiasUtilizadas.map((tech, techIndex) => tech && <li key={techIndex}>{tech}</li>)}
+                </ul>
+                <div className="font-bold text-xl mt-3 mb-2 font-poppins">Habilidades desarrolladas</div>
+                <ul className='text-lg mt-4 mx-6 list-disc '>
+                  {project.habilidadesDesarrolladas.map((skill, skillIndex) => skill && <li key={skillIndex}>{skill}</li>)}
+                </ul>
+              </div>
+              <div className="px-6 pt-4 pb-2">
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block bg-cyan-800 text-white w-full px-3 py-2 rounded-lg text-lg font-semibold text-center font-poppins"
                 >
-                Ver proyecto
+                  Ver proyecto
                 </a>
-                </div>
-                </div>
-            ))}
-        </div>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
 
-        <div className="justify-center mt-6 "> 
-        <p className="text-white text-center text-2xl font-poppins"> Proyectos con HTML, CSS y JavaScript básicos </p>
-        </div>
-        
-            <div className="flex flex-wrap justify-center sm:grid-cols-2 md:grid-cols-3 gap-24 px-4 py-10">
-            {projects2.map((project, index) => (
-                <div key={index} className="max-w-sm rounded-2xl overflow-hidden shadow-2xl bg-gray-100" >
-                <img className="w-full" src={project.image} alt={project.title} />
-                <div className="px-6 py-4">
-                <div className="font-bold text-xl mb-2">{project.title}</div>
+      <div className="justify-center mt-6">
+        <p className="text-white text-center text-3xl font-poppins"> Proyectos con HTML, CSS y JavaScript básicos </p>
+      </div>
+
+      <div className="flex flex-col items-center gap-12 px-4 py-10">
+        {projects2.map((project, index) => (
+          <div key={index} className="w-full sm:max-w-2xl lg:max-w-3xl mx-10">
+            <div className="h-full rounded-2xl overflow-hidden shadow-2xl bg-gray-100">
+              <img className="w-full object-cover h-auto" src={project.image} alt={project.title} />
+              <div className="px-6 py-4">
+                <div className="font-bold text-xl mb-2 font-poppins">{project.title}</div>
                 <p className="text-gray-700 text-base"> {project.description} </p>
-            </div>
-            <div className="px-6 pt-4 pb-2">
-            <a
-                href={project.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block bg-cyan-800 text-white w-full px-3 py-2 rounded-lg text-lg font-semibold text-center font-poppins"
+                <div className="font-bold text-xl mt-3 mb-2 font-poppins">Tecnologías utilizadas</div>
+                <ul className='text-lg mt-4 mx-6 list-disc '>
+                  {project.tecnologiasUtilizadas.map((tech, techIndex) => tech && <li key={techIndex}>{tech}</li>)}
+                </ul>
+                <div className="font-bold text-xl mt-3 mb-2 font-poppins">Habilidades desarrolladas</div>
+                <ul className='text-lg mt-4 mx-6 list-disc '>
+                  {project.habilidadesDesarrolladas.map((skill, skillIndex) => skill && <li key={skillIndex}>{skill}</li>)}
+                </ul>
+              </div>
+              <div className="px-6 pt-4 pb-2">
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block bg-cyan-800 text-white w-full px-3 py-2 rounded-lg text-lg font-semibold text-center font-poppins"
                 >
-                Ver proyecto
+                  Ver proyecto
                 </a>
-                </div>
-                </div>
-            ))}
-        </div>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
-)
-}
+  );
+};
 
-export default Body
+export default Body;
