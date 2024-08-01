@@ -11,12 +11,12 @@ const SobreMi = () => {
               Soy Jared Ozono, un desarrollador Frontend con un profundo interés en aprender más sobre la creación de interfaces de usuario dinámicas y responsivas. Mi objetivo es transformar ideas complejas en aplicaciones web intuitivas y funcionales. Me especializo en tecnologías modernas como React, Vite.js y Tailwind CSS, y estoy comprometido con el aprendizaje continuo y la mejora de mis habilidades.
             </p>
           </div>
-          <div className='flex flex-col items-center mt-6 lg:mt-0 mx-6 lg:ml-10'>
+          <div className='flex flex-col items-center mt-4 lg:ml-10'>
             <img src="/image/yo.jpg" alt="Jared Ozono" className='w-64 h-64 rounded-full border-2 border-green-900 shadow-lg' />
             <a 
               href="/CV.pdf" 
               download 
-              className="inline-block bg-cyan-800 text-white px-4 py-2 rounded-lg text-lg font-semibold text-center font-poppins mt-4">
+              className="inline-block bg-cyan-800 text-white px-4 py-2 mb-6 rounded-lg text-lg font-semibold text-center font-poppins mt-4">
               Descargar mi Currículum Vitae
             </a>
           </div>
