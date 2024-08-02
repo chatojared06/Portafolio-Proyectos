@@ -30,6 +30,18 @@ const AboutMy = () => {
           <li><strong>Persistencia de Datos:</strong> Implementación de técnicas para almacenar y recuperar datos</li>
         </ul>
       </div>
+      <div className='flex justify-start'>
+      <a 
+          href="#"
+          onClick={(button) => {
+            button.preventDefault();
+            alert('Página en creación');
+          }}
+        
+          className="inline-block bg-cyan-800 text-white px-4 py-2 mb-6 rounded-lg text-lg font-semibold font-poppins mt-4">
+          Ver mis diplomas
+        </a>
+      </div>
     </div>
   );
 }
