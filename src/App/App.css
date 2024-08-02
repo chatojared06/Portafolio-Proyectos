@@ -1,20 +1,7 @@
 body {
-  background-image: url('/image/background.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100%;
-  width: 100%;
-  margin: 0;
+  background-color: rgb(89, 107, 117);
 }
 
 #root {
   height: 100%;
-}
-
-.bg-custom-pattern {
-  background-image: url('/image/background.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }

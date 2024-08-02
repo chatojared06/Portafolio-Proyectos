@@ -6,6 +6,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        'custom-green': '#3c543d',
+      },
+      
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
       },

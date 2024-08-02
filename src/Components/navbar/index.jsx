@@ -8,7 +8,6 @@ const Navbar = () => {
       <img src="/Logopng.png" alt="logo" className="w-20 h-20 mb-3" />
       <h1 className="text-white font-poppins text-4xl text-center m-3">Jared Ozono</h1>
       </div>
-      <h2 className='text-gray-400 font-poppins text-3xl text-center mb-2'>Desarrollador Frontend apasionado por crear <br /> soluciones web innovadoras y eficientes</h2>
     </nav>
   );
 }
