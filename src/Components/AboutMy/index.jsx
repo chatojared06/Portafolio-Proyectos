@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const AboutMy = () => {
   return (
@@ -15,14 +16,14 @@ const AboutMy = () => {
       </div>
       <div className='w-full max-w-screen-lg sm:mt-6 mt-0 mx-20'>
         <h2 className='text-gray font-poppins text-3xl mt-6 mx-6'>Tecnologías y Habilidades:</h2>
-        <h3 className='text-red-800 font-poppins text-2xl mt-6 mx-6'>Tecnologías:</h3>
+        <h3 className='text-blue-900 font-poppins text-2xl mt-6 mx-6'>Tecnologías:</h3>
         <ul className='text-lg mt-4 mx-6 list-disc list-inside'>
           <li><strong>Frontend:</strong> React, Vite.js, HTML, CSS, JavaScript, Tailwind CSS</li>
           <li><strong>Herramientas de Desarrollo:</strong> Git, GitHub, Netlify</li>
           <li><strong>Otros:</strong> API Integration, Local Storage, Responsive Design</li>
         </ul>
         
-        <h3 className='text-green-800 font-poppins text-2xl mt-6 mx-6'>Habilidades:</h3>
+        <h3 className='text-custom-green font-poppins text-2xl mt-6 mx-6'>Habilidades:</h3>
         <ul className='text-lg mt-4 mb-6 mx-6 list-disc list-inside'>
           <li><strong>Desarrollo de Interfaces de Usuario:</strong> Creación de interfaces atractivas y funcionales</li>
           <li><strong>Optimización de Rendimiento:</strong> Mejora de la eficiencia y velocidad de las aplicaciones web</li>
@@ -31,16 +32,11 @@ const AboutMy = () => {
         </ul>
       </div>
       <div className='flex justify-start'>
-      <a 
-          href="#"
-          onClick={(button) => {
-            button.preventDefault();
-            alert('Página en creación');
-          }}
-        
+        <Link 
+          to="/certificados"
           className="inline-block bg-cyan-800 text-white px-4 py-2 mb-6 rounded-lg text-lg font-semibold font-poppins mt-4">
           Ver mis diplomas
-        </a>
+        </Link>
       </div>
     </div>
   );

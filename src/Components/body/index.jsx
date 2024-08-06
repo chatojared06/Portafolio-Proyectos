@@ -1,4 +1,5 @@
 import React from "react";
+import './index.css'
 
 const projects = [
   {
@@ -73,7 +74,7 @@ const projects2 = [
 
 const Body = () => {
   return (
-    <div className="flex flex-col items-center">
+    <div className="body flex flex-col items-center">
       <div className="justify-center mt-6">
         <p className="text-white text-center text-2xl font-poppins"> Proyectos con lógica </p>
       </div>
