@@ -4,39 +4,39 @@ import './index.css';
 const diplomas = [
   {
     title: 'FrontEnd Developer',
-    image: '/public/certificados/diploma-frontend-developer.jpg',
+    image: '/certificados/diploma-frontend-developer.jpg',
   },
   {
     title: 'FrontEnd Developer práctico',
-    image: '/public/certificados/diploma-frontend-developer-practico.jpg',
+    image: '/certificados/diploma-frontend-developer-practico.jpg',
   },
   {
     title: 'Git y GitHub',
-    image: '/public/certificados/diploma-git-github.jpg',
+    image: '/certificados/diploma-git-github.jpg',
   },
   {
     title: 'Fundamentos de JavaScript',
-    image: '/public/certificados/diploma-javascript.jpg',
+    image: '/certificados/diploma-javascript.jpg',
   },
   {
     title: 'Asincronismo con JavaScript',
-    image: '/public/certificados/diploma-asincronismo-js.jpg',
+    image: '/certificados/diploma-asincronismo-js.jpg',
   },
   {
     title: 'NPM: Gestión de paquetes y dependencias en JavaScript',
-    image: '/public/certificados/diploma-npm.jpg',
+    image: '/certificados/diploma-npm.jpg',
   },
   {
     title: 'React.js',
-    image: '/public/certificados/diploma-react.jpg',
+    image: '/certificados/diploma-react.jpg',
   },
   {
     title: 'React.js con Vite.js y Tailwind.css',
-    image: '/public/certificados/diploma-react-vite-tailwindcss.jpg',
+    image: '/certificados/diploma-react-vite-tailwindcss.jpg',
   },
   {
     title: 'React.js: E-Commerce profesional',
-    image: '/public/certificados/diploma-laboratorio-react.jpg',
+    image: '/certificados/diploma-laboratorio-react.jpg',
   },
 ];
 
