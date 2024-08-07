@@ -16,7 +16,7 @@ const AboutMy = () => {
       </div>
       <div className='w-full max-w-screen-lg sm:mt-6 mt-0 mx-20'>
         <h2 className='text-gray font-poppins text-3xl mt-6 mx-6'>Tecnologías y Habilidades:</h2>
-        <h3 className='text-blue-900 font-poppins text-2xl mt-6 mx-6'>Tecnologías:</h3>
+        <h3 className='text-custom-green font-poppins text-2xl mt-6 mx-6'>Tecnologías:</h3>
         <ul className='text-lg mt-4 mx-6 list-disc list-inside'>
           <li><strong>Frontend:</strong> React, Vite.js, HTML, CSS, JavaScript, Tailwind CSS</li>
           <li><strong>Herramientas de Desarrollo:</strong> Git, GitHub, Netlify</li>
@@ -35,7 +35,7 @@ const AboutMy = () => {
         <Link 
           to="/certificados"
           className="inline-block bg-cyan-800 text-white px-4 py-2 mb-6 rounded-lg text-lg font-semibold font-poppins mt-4">
-          Ver mis diplomas
+          Ver mis certificados
         </Link>
       </div>
     </div>
