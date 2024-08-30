@@ -33,7 +33,7 @@ const projects = [
       'Optimización de Rendimiento: Mejoré la eficiencia de la aplicación, asegurando una carga rápida y una experiencia de usuario fluida.',
     ],
     image: '/image/To-do-list.png',
-    link: 'https://chatojared06.github.io/TodoMachine/',
+    link: ' https://chatojared06.github.io/Todo-Machine/',
   },
 ];
 
@@ -83,7 +83,7 @@ const Body = () => {
         {projects.map((project, index) => (
           <div key={index} className="w-full sm:max-w-2xl lg:max-w-3xl mx-10">
             <div className="h-full rounded-2xl overflow-hidden shadow-2xl bg-gray-100">
-              <img className="w-full object-cover h-auto" src={project.image} alt={project.title} />
+              <img className=" https://chatojared06.github.io/Todo-Machine/" src={project.image} alt={project.title} />
               <div className="px-6 py-4">
                 <div className="font-bold text-xl mb-2 font-poppins">{project.title}</div>
                 <p className="text-gray-700 text-base"> {project.description} </p>
