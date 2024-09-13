@@ -39,6 +39,21 @@ const projects = [
 
 const projects2 = [
   {
+    title: 'Pagina de Error 404',
+    description: 'Página personalizada de error 404 inspirada en Star Wars. Incluye un diseño galáctico con una animación en el botón de regreso icónica de la saga, asegurando una experiencia visual atractiva para los usuarios cuando se encuentran con una página no encontrada.',
+    tecnologiasUtilizadas: [
+      'HTML: Utilizado para crear la estructura del sitio web.',
+      'CSS: Usado para diseñar y estilizar la interfaz, asegurando un diseño atractivo y responsivo, y para agregarle una animación al botón.'
+    ],
+    habilidadesDesarrolladas: [
+      'HTML: Organización del contenido con etiquetas básicas.',
+      'Estilización con CSS: Uso avanzado de selectores y propiedades CSS para personalizar el estilo y diseño visual.',
+      'Diseño Responsivo: Aplicación de técnicas para que la página se vea bien en diferentes dispositivos.'
+    ],
+    image: '/image/error-star-wars.png',
+    link: 'https://chatojared06.github.io/Error-404-star-wars/'
+  },   
+  {
     title: 'Concepto básico de un E-commerce sin lógica',
     description: 'Desarrollé un sitio web de comercio electrónico básico para aprender y practicar los conceptos fundamentales de HTML y CSS. Este proyecto me permitió comprender la estructura básica de un sitio web y cómo estilizarlo utilizando CSS. Aunque no incluye lógica de backend ni interacciones avanzadas, el diseño es responsivo y ofrece una buena base para proyectos más complejos en el futuro.',
     tecnologiasUtilizadas: [
