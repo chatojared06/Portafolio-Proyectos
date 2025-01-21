@@ -68,23 +68,6 @@ const projects2 = [
     image: '/image/ecommerce-boseto.png',
     link: 'https://chatojared06.github.io/curso-frontend-developer-JavaScript-practico/',
   },
-  {
-    title: 'Boseto de un Portafolio profesional y página de contacto',
-    description: 'En este proyecto básico aprendí a llamar los últimos videos de un canal de YouTube y presentarlos en la aplicación',
-    tecnologiasUtilizadas: [
-      'HTML: Utilizado para estructurar las páginas del portafolio.',
-      'CSS: Usado para estilizar y diseñar la interfaz, asegurando una apariencia profesional.',
-      'JavaScript: Implementado para integrar la API de YouTube y manejar la presentación dinámica de los videos.',
-      'API de YouTube: Usada para obtener y mostrar los últimos videos de un canal específico.',
-    ],
-    habilidadesDesarrolladas: [
-      'Integración de API: Aprendí a interactuar con la API de YouTube, gestionar solicitudes y respuestas, y mostrar los datos obtenidos en la página web.',
-      'Diseño de Interfaz: Mejoré mis habilidades en el diseño de interfaces, creando una presentación atractiva y funcional para el portafolio y la página de contacto.',
-      'JavaScript Básico: Utilicé JavaScript para manejar la lógica necesaria para obtener y presentar los videos de YouTube dinámicamente.',
-    ],
-    image: '/image/jedi.png',
-    link: 'https://chatojared06.github.io/async-landing/',
-  },
 ];
 
 const Body = () => {
