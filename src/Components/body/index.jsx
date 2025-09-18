@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import './index.css'
 
 const projects = [
@@ -34,6 +34,23 @@ const projects = [
     ],
     image: '/image/To-do-list.png',
     link: ' https://chatojared06.github.io/Todo-Machine/',
+  },
+  {
+    title: 'MovieApp con la API de TMDB',
+    description: 'Aplicación web interactiva para explorar películas, desarrollada utilizando la API de The Movie Database (TMDB). El proyecto permite a los usuarios descubrir películas populares, filtrar por género, buscar títulos específicos y ver páginas de detalles4.',
+    tecnologiasUtilizadas: [
+      'React: Utilizado para construir una interfaz de usuario dinámica y reactiva.',
+      'Vite.js: Implementado como la herramienta de construcción para un desarrollo y recarga ultra rápidos.',
+      'Tailwind CSS: Usado para diseñar y estilizar toda la aplicación, logrando un diseño moderno y responsivo.',
+      'React Router Dom: Para manejar la navegación del lado del cliente, creando una experiencia de aplicación de una sola página con múltiples vistas y rutas dinámicas.',
+      'Axios: Implementado para gestionar las llamadas a la API de TMDB de forma asíncrona.',
+    ],
+    habilidadesDesarrolladas: [
+      'Integración de APIs con Axios: Consumo de datos de una API RESTful (TMDB), realizando peticiones asíncronas para obtener, buscar y filtrar información, incluyendo la gestión segura de claves de API.',
+      'Desarrollo de UI Interactiva y Animaciones: Creación de componentes con micro-interacciones y efectos visuales usando únicamente utilidades de Tailwind CSS, como animaciones en hover y transiciones condicionales.',
+    ],
+    image: '/image/MovieApp.png', 
+    link: 'https://jsxmovieapp.netlify.app/',
   },
 ];
 
@@ -72,14 +89,14 @@ const projects2 = [
 
 const Body = () => {
   return (
-    <div className="body flex flex-col items-center">
+    <div className="body flex flex-col items-center ">
       <div className="justify-center mt-6">
         <p className="text-white text-center text-2xl font-poppins"> Proyectos con lógica </p>
       </div>
 
-      <div className="flex flex-col items-center gap-12 px-4 py-10">
+      <div className="flex flex-wrap justify-center gap-8 py-10">
         {projects.map((project, index) => (
-          <div key={index} className="w-full sm:max-w-2xl lg:max-w-3xl mx-10">
+          <div key={index} className="w-full sm:max-w-2xl lg:max-w-3xl mx-4">
             <div className="h-full rounded-2xl overflow-hidden shadow-2xl bg-gray-100">
               <img className=" https://chatojared06.github.io/Todo-Machine/" src={project.image} alt={project.title} />
               <div className="px-6 py-4">
@@ -113,9 +130,9 @@ const Body = () => {
         <p className="text-white text-center text-3xl font-poppins"> Proyectos con HTML, CSS y JavaScript básicos </p>
       </div>
 
-      <div className="flex flex-col items-center gap-12 px-4 py-10">
+      <div className="flex flex-wrap justify-center gap-8 py-10">
         {projects2.map((project, index) => (
-          <div key={index} className="w-full sm:max-w-2xl lg:max-w-3xl mx-10">
+          <div key={index} className="w-full sm:max-w-2xl lg:max-w-3xl mx-4">
             <div className="h-full rounded-2xl overflow-hidden shadow-2xl bg-gray-100">
               <img className="w-full object-cover h-auto" src={project.image} alt={project.title} />
               <div className="px-6 py-4">

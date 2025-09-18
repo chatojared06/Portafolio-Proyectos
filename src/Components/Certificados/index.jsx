@@ -36,11 +36,11 @@ const diplomasFront = [
   },
   {
     title: 'React.js: E-Commerce profesional',
-    image: '/certificados/diploma-laboratorio-react.jpg',
+    image: '/certificados/diploma-laboratorio-react.jpg', 
   },
   {
     title: 'Curso React.js',
-    image: '/certificados/Curso-Reactjs.png',
+    image: '/certificados/curso-reactjs.png',
   },
 ];
 
