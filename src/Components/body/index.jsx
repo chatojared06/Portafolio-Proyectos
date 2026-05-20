@@ -1,7 +1,25 @@
-import React from 'react';
 import './index.css'
 
 const projects = [
+  {
+    title: 'BorderCRM — AI-Powered B2B SaaS',
+    description: 'Plataforma SaaS full-stack estructurada en un monorepo para la gestión avanzada de leads B2B. Implementa un pipeline Kanban interactivo con persistencia de estados en tiempo real, protección de rutas mediante autenticación JWT estricta y un agente de IA integrado para automatizar flujos de venta.',
+    tecnologiasUtilizadas: [
+      'React & Vite.js: Utilizados para construir una UI dinámica, rápida y de alto rendimiento.',
+      'Node.js & Express: Para la construcción de la API RESTful del servidor.',
+      'PostgreSQL & Prisma ORM: Para la gestión segura de la base de datos relacional en la nube (Neon DB).',
+      'Google Gemini API: Integración de inteligencia artificial para asistencia y redacción de correos.',
+      'Tailwind CSS: Diseño de interfaces modernas, responsivas y mobile-first.'
+    ],
+    habilidadesDesarrolladas: [
+      'Arquitectura Monorepo: Estructuración profesional de cliente y servidor en un solo repositorio.',
+      'Seguridad (Auth): Implementación completa de JSON Web Tokens (JWT) y protección de rutas privadas.',
+      'Operaciones CRUD Complejas: Persistencia de datos en tiempo real entre el Frontend y el Backend.',
+      'Integración de IA: Conexión con modelos de lenguaje grandes (LLMs) para procesar datos de la aplicación y generar respuestas automatizadas.'
+    ],
+    image: 'image/Border-crm.png', 
+    link: 'https://border-crm.netlify.app/', 
+  },
   {
     title: 'E-commerce con API Fake Platzi',
     description: 'Desarrollé una tienda en línea utilizando React, Vite.js y Tailwind CSS. Este proyecto me permitió aprender a manipular una API, gestionar datos de manera eficiente y redirigir a los usuarios según sus interacciones. La tienda simula un entorno de comercio electrónico con funcionalidades completas, proporcionando una experiencia de usuario fluida y responsiva.',
