@@ -1,5 +1,3 @@
-import './index.css'
-
 const projects = [
   {
     title: 'BorderCRM — AI-Powered B2B SaaS',
@@ -107,25 +105,25 @@ const projects2 = [
 
 const Body = () => {
   return (
-    <div className="body flex flex-col items-center ">
+    <div className="flex flex-col items-center ">
       <div className="justify-center mt-6">
-        <p className="text-white text-center text-2xl font-poppins"> Proyectos con lógica </p>
+        <p className=" text-slate-900 font-extrabold text-3xl mb-4 text-center font-poppins"> Proyectos con lógica </p>
       </div>
 
       <div className="flex flex-wrap justify-center gap-8 py-10">
         {projects.map((project, index) => (
           <div key={index} className="w-full sm:max-w-2xl lg:max-w-3xl mx-4">
-            <div className="h-full rounded-2xl overflow-hidden shadow-2xl bg-gray-100">
-              <img className=" https://chatojared06.github.io/Todo-Machine/" src={project.image} alt={project.title} />
+            <div className="h-full rounded-2xl overflow-hidden bg-white shadow-sm hover:shadow-xl border border-slate-200 transition-all duration-300 group">
+              <img className=" w-full object-cover h-auto" src={project.image} alt={project.title} />
               <div className="px-6 py-4">
-                <div className="font-bold text-xl mb-2 font-poppins">{project.title}</div>
-                <p className="text-gray-700 text-base"> {project.description} </p>
-                <div className="font-bold text-xl mt-3 mb-2 font-poppins">Tecnologías utilizadas</div>
-                <ul className='text-lg mt-4 mx-6 list-disc '>
+                <div className="font-bold text-xl mb-2 font-poppins text-slate-900 group-hover:text-blue-600 transition-colors">{project.title}</div>
+                <p className="text-slate-600 leading-relaxed"> {project.description} </p>
+                <div className="font-bold text-slate-900 text-sm tracking-wide uppercase mt-3 mb-2 font-poppins">Tecnologías utilizadas</div>
+                <ul className='text-sm text-slate-600 space-y-1 mt-4 mx-6 list-disc '>
                   {project.tecnologiasUtilizadas.map((tech, techIndex) => tech && <li key={techIndex}>{tech}</li>)}
                 </ul>
-                <div className="font-bold text-xl mt-3 mb-2 font-poppins">Habilidades desarrolladas</div>
-                <ul className='text-lg mt-4 mx-6 list-disc '>
+                <div className="font-bold text-slate-900 text-sm tracking-wide uppercase mt-3 mb-2 font-poppins">Habilidades desarrolladas</div>
+                <ul className='text-sm text-slate-600 space-y-1 mt-4 mx-6 list-disc '>
                   {project.habilidadesDesarrolladas.map((skill, skillIndex) => skill && <li key={skillIndex}>{skill}</li>)}
                 </ul>
               </div>
@@ -134,7 +132,7 @@ const Body = () => {
                   href={project.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block bg-cyan-800 text-white w-full px-3 py-2 rounded-lg text-lg font-semibold text-center font-poppins"
+                  className="inline-block bg-slate-900 hover:bg-slate-800 text-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 w-full px-3 py-2 text-lg font-semibold text-center font-poppins"
                 >
                   Ver proyecto
                 </a>
@@ -145,23 +143,23 @@ const Body = () => {
       </div>
 
       <div className="justify-center mt-6">
-        <p className="text-white text-center text-3xl font-poppins"> Proyectos con HTML, CSS y JavaScript básicos </p>
+        <p className=" text-slate-900 font-extrabold text-3xl mb-4 text-center font-poppins"> Proyectos con HTML, CSS y JavaScript básicos </p>
       </div>
 
       <div className="flex flex-wrap justify-center gap-8 py-10">
         {projects2.map((project, index) => (
           <div key={index} className="w-full sm:max-w-2xl lg:max-w-3xl mx-4">
-            <div className="h-full rounded-2xl overflow-hidden shadow-2xl bg-gray-100">
-              <img className="w-full object-cover h-auto" src={project.image} alt={project.title} />
+            <div className="h-full rounded-2xl overflow-hidden bg-white shadow-sm hover:shadow-xl border border-slate-200 transition-all duration-300 group">
+              <img className=" w-full object-cover h-auto" src={project.image} alt={project.title} />
               <div className="px-6 py-4">
-                <div className="font-bold text-xl mb-2 font-poppins">{project.title}</div>
-                <p className="text-gray-700 text-base"> {project.description} </p>
-                <div className="font-bold text-xl mt-3 mb-2 font-poppins">Tecnologías utilizadas</div>
-                <ul className='text-lg mt-4 mx-6 list-disc '>
+                <div className="font-bold text-xl mb-2 font-poppins text-slate-900 group-hover:text-blue-600 transition-colors">{project.title}</div>
+                <p className="text-slate-600 leading-relaxed"> {project.description} </p>
+                <div className="font-bold text-slate-900 text-sm tracking-wide uppercase mt-3 mb-2 font-poppins">Tecnologías utilizadas</div>
+                <ul className='text-sm text-slate-600 space-y-1 mt-4 mx-6 list-disc '>
                   {project.tecnologiasUtilizadas.map((tech, techIndex) => tech && <li key={techIndex}>{tech}</li>)}
                 </ul>
-                <div className="font-bold text-xl mt-3 mb-2 font-poppins">Habilidades desarrolladas</div>
-                <ul className='text-lg mt-4 mx-6 list-disc '>
+                <div className="font-bold text-slate-900 text-sm tracking-wide uppercase mt-3 mb-2 font-poppins">Habilidades desarrolladas</div>
+                <ul className='text-sm text-slate-600 space-y-1 mt-4 mx-6 list-disc '>
                   {project.habilidadesDesarrolladas.map((skill, skillIndex) => skill && <li key={skillIndex}>{skill}</li>)}
                 </ul>
               </div>
@@ -170,7 +168,7 @@ const Body = () => {
                   href={project.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block bg-cyan-800 text-white w-full px-3 py-2 rounded-lg text-lg font-semibold text-center font-poppins"
+                  className="inline-block bg-slate-900 hover:bg-slate-800 text-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 w-full px-3 py-2 text-lg font-semibold text-center font-poppins"
                 >
                   Ver proyecto
                 </a>

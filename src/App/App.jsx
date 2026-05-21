@@ -1,4 +1,3 @@
-import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import ScrollToTop from '../Components/Scroll/SrollToTop';
 import Navbar from '../Components/navbar';
@@ -13,7 +12,7 @@ const App = () => {
   return (
     <Router>
       <ScrollToTop/>
-      <div className="flex flex-col min-h-screen bg-custom-pattern">
+      <div className="bg-slate-50 min-h-screen text-slate-900 flex flex-col">
         <Navbar />
         <div className="flex-grow">
           <Routes>

@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import './index.css';
+import { useState } from 'react';
 
 const diplomasFront = [
   {
@@ -67,21 +66,21 @@ const Certificados = () => {
   };
 
   return (
-    <div className='fondo flex flex-col items-center'>
-      <h1 className='text-custom-green font-poppins text-4xl mt-10 mb-14'>Certificados</h1>
+    <div className='bg-slate-50 min-h-screen text-slate-900 flex flex-col items-center'>
+      <h1 className='text-slate-900 font-extrabold text-3xl mb-8 mt-6 text-center'>Certificados</h1>
       <div className='flex flex-col items-center'>
-      <h2 className='font-poppins text-3xl mt-10 mb-14'>FrontEnd Developer</h2>
+      <h2 className='font-poppins text-2xl font-bold text-slate-800 mt-10 mb-8'>FrontEnd Developer</h2>
 
       <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-6 mx-10 mb-16'>
         {diplomasFront.map((diploma, index) => (
-          <div key={index} className="flex flex-col items-center bg-gray-300 p-4 rounded-lg shadow-lg">
+          <div key={index} className="flex flex-col items-center bg-white p-4 rounded-2xl shadow-sm hover:shadow-xl border border-slate-200 transition-all duration-300 group">
             <img 
               src={diploma.image} 
               alt={diploma.title} 
-              className="h-auto object-cover w-full rounded-md mb-4 cursor-pointer" 
+              className="h-auto object-cover w-full rounded-xl transition-transform duration-300 group-hover:scale-[1.02] shadow-sm mb-4 cursor-pointer" 
               onClick={() => handleImageClick(diploma.image)}
             />
-            <h3 className="font-poppins text-xl text-center">{diploma.title}</h3>
+            <h3 className="font-poppins text-lg font-semibold text-slate-900 group-hover:text-blue-600 transition-colors mt-2 text-center">{diploma.title}</h3>
           </div>
         ))}
       </div>
@@ -108,14 +107,14 @@ const Certificados = () => {
 
       <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-6 mx-10 mb-16'>
         {diplomasback.map((diploma, index) => (
-          <div key={index} className="flex flex-col items-center bg-gray-300 p-4 rounded-lg shadow-lg">
+          <div key={index} className="flex flex-col items-center bg-white p-4 rounded-2xl shadow-sm hover:shadow-xl border border-slate-200 transition-all duration-300 group">
             <img 
               src={diploma.image} 
               alt={diploma.title} 
-              className="h-auto object-cover w-full rounded-md mb-4 cursor-pointer" 
+              className="h-auto object-cover w-full rounded-xl transition-transform duration-300 group-hover:scale-[1.02] shadow-sm mb-4 cursor-pointer" 
               onClick={() => handleImageClick(diploma.image)}
             />
-            <h3 className="font-poppins text-xl text-center">{diploma.title}</h3>
+            <h3 className="font-poppins text-lg font-semibold text-slate-900 group-hover:text-blue-600 transition-colors mt-2 text-center">{diploma.title}</h3>
           </div>
         ))}
       </div>
