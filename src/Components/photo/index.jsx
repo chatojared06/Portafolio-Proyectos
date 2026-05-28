@@ -16,7 +16,7 @@ const Photo = () => {
      
       <div className='flex flex-col items-center sm:mt-6 mt-0'>
         <img 
-          src="/image/yo.jpg" 
+          src="/yo.jpg" 
           alt="Jared Ozono" 
           
           className='w-64 h-64 rounded-full border-4 border-white shadow-2xl object-cover object-top'
