@@ -36,22 +36,6 @@ const projects = [
     link: 'https://jsxmovieapp.netlify.app/',
   },
   {
-    title: 'To do list',
-    description: 'Desarrollé una aplicación de lista de tareas utilizando React.js. Este proyecto me permitió aprender a implementar la persistencia de datos usando el almacenamiento local (local storage), asegurando que las tareas del usuario se mantengan guardadas incluso después de cerrar la aplicación. La interfaz es intuitiva y fácil de usar, permitiendo a los usuarios agregar, editar y eliminar tareas de manera eficiente.',
-    tecnologiasUtilizadas: [
-      'React: Utilizado para crear una interfaz de usuario dinámica y reactiva.',
-      'CSS: Usado para diseñar una interfaz limpia y moderna, asegurando una buena experiencia de usuario.',
-      'Local Storage: Implementado para mantener la persistencia de datos, guardando las tareas del usuario en el navegador.',
-    ],
-    habilidadesDesarrolladas: [
-      'Gestión de Estados en React: Aprendí a manejar estados en React para actualizar y renderizar la lista de tareas en tiempo real.',
-      'Persistencia de Datos: Implementé técnicas para almacenar y recuperar datos del local storage, asegurando que las tareas del usuario se guarden y se recuperen correctamente.',
-      'Optimización de Rendimiento: Mejoré la eficiencia de la aplicación, asegurando una carga rápida y una experiencia de usuario fluida.',
-    ],
-    image: '/image/To-do-list.png',
-    link: ' https://chatojared06.github.io/Todo-Machine/',
-  },
-  {
     title: 'E-commerce con API Fake Platzi',
     description: 'Desarrollé una tienda en línea utilizando React, Vite.js y Tailwind CSS. Este proyecto me permitió aprender a manipular una API, gestionar datos de manera eficiente y redirigir a los usuarios según sus interacciones. La tienda simula un entorno de comercio electrónico con funcionalidades completas, proporcionando una experiencia de usuario fluida y responsiva.',
     tecnologiasUtilizadas: [
@@ -70,44 +54,12 @@ const projects = [
   },
 ];
 
-const projects2 = [
-  {
-    title: 'Pagina de Error 404',
-    description: 'Página personalizada de error 404 inspirada en Star Wars. Incluye un diseño galáctico con una animación en el botón de regreso icónica de la saga, asegurando una experiencia visual atractiva para los usuarios cuando se encuentran con una página no encontrada.',
-    tecnologiasUtilizadas: [
-      'HTML: Utilizado para crear la estructura del sitio web.',
-      'CSS: Usado para diseñar y estilizar la interfaz, asegurando un diseño atractivo y responsivo, y para agregarle una animación al botón.'
-    ],
-    habilidadesDesarrolladas: [
-      'HTML: Organización del contenido con etiquetas básicas.',
-      'Estilización con CSS: Uso avanzado de selectores y propiedades CSS para personalizar el estilo y diseño visual.',
-      'Diseño Responsivo: Aplicación de técnicas para que la página se vea bien en diferentes dispositivos.'
-    ],
-    image: '/image/error-star-wars.png',
-    link: 'https://chatojared06.github.io/Error-404-star-wars/'
-  },   
-  {
-    title: 'Concepto básico de un E-commerce sin lógica',
-    description: 'Desarrollé un sitio web de comercio electrónico básico para aprender y practicar los conceptos fundamentales de HTML y CSS. Este proyecto me permitió comprender la estructura básica de un sitio web y cómo estilizarlo utilizando CSS. Aunque no incluye lógica de backend ni interacciones avanzadas, el diseño es responsivo y ofrece una buena base para proyectos más complejos en el futuro.',
-    tecnologiasUtilizadas: [
-      'HTML: Utilizado para crear la estructura del sitio web.',
-      'CSS: Usado para diseñar y estilizar la interfaz, asegurando un diseño atractivo y responsivo.',
-    ],
-    habilidadesDesarrolladas: [
-      'Maquetación con HTML: Aprendí a estructurar correctamente un sitio web utilizando etiquetas semánticas de HTML.',
-      'Estilización con CSS: Implementé estilos para mejorar la apariencia del sitio, incluyendo el uso de flexbox y grid para crear un diseño responsivo.',
-      'Diseño Responsivo: Aseguré que el sitio web se vea bien en diferentes dispositivos y tamaños de pantalla.',
-    ],
-    image: '/image/ecommerce-boseto.png',
-    link: 'https://chatojared06.github.io/curso-frontend-developer-JavaScript-practico/',
-  },
-];
 
 const Body = () => {
   return (
     <div className="flex flex-col items-center ">
       <div className="justify-center mt-6">
-        <p className=" text-slate-900 font-extrabold text-3xl mb-4 text-center font-poppins"> Proyectos con lógica </p>
+        <p className=" text-slate-900 font-extrabold text-3xl mb-4 text-center font-poppins"> Proyectos Destacados </p>
       </div>
 
       <div className="flex flex-wrap justify-center gap-8 py-10">
@@ -140,43 +92,7 @@ const Body = () => {
             </div>
           </div>
         ))}
-      </div>
-
-      <div className="justify-center mt-6">
-        <p className=" text-slate-900 font-extrabold text-3xl mb-4 text-center font-poppins"> Proyectos con HTML, CSS y JavaScript básicos </p>
-      </div>
-
-      <div className="flex flex-wrap justify-center gap-8 py-10">
-        {projects2.map((project, index) => (
-          <div key={index} className="w-full sm:max-w-2xl lg:max-w-3xl mx-4">
-            <div className="h-full rounded-2xl overflow-hidden bg-white shadow-sm hover:shadow-xl border border-slate-200 transition-all duration-300 group">
-              <img className=" w-full object-cover h-auto" src={project.image} alt={project.title} />
-              <div className="px-6 py-4">
-                <div className="font-bold text-xl mb-2 font-poppins text-slate-900 group-hover:text-blue-600 transition-colors">{project.title}</div>
-                <p className="text-slate-600 leading-relaxed"> {project.description} </p>
-                <div className="font-bold text-slate-900 text-sm tracking-wide uppercase mt-3 mb-2 font-poppins">Tecnologías utilizadas</div>
-                <ul className='text-sm text-slate-600 space-y-1 mt-4 mx-6 list-disc '>
-                  {project.tecnologiasUtilizadas.map((tech, techIndex) => tech && <li key={techIndex}>{tech}</li>)}
-                </ul>
-                <div className="font-bold text-slate-900 text-sm tracking-wide uppercase mt-3 mb-2 font-poppins">Habilidades desarrolladas</div>
-                <ul className='text-sm text-slate-600 space-y-1 mt-4 mx-6 list-disc '>
-                  {project.habilidadesDesarrolladas.map((skill, skillIndex) => skill && <li key={skillIndex}>{skill}</li>)}
-                </ul>
-              </div>
-              <div className="px-6 pt-4 pb-2">
-                <a
-                  href={project.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block bg-slate-900 hover:bg-slate-800 text-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 w-full px-3 py-2 text-lg font-semibold text-center font-poppins"
-                >
-                  Ver proyecto
-                </a>
-              </div>
-            </div>
-          </div>
-        ))}
-      </div>
+      </div>    
     </div>
   );
 };

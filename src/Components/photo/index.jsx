@@ -23,7 +23,7 @@ const Photo = () => {
           />
 
         <a 
-          href="/public/Curriculum-Jared-Ozono.pdf" 
+          href="/Curriculum-Jared-Ozono.pdf" 
           download 
           className="inline-block bg-blue-600 hover:bg-blue-700 text-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 px-4 py-2 mb-6 text-lg font-semibold font-poppins mt-4 text-center">
           Descargar mi Currículum Vitae
